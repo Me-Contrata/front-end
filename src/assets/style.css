@@ -1,4 +1,24 @@
+:root {
+  --primary-color: #fe7366;
+  --text-color: #f2f2f2;
+  --second-text: #363636;
+}
+
 body {
   background: linear-gradient(106.77deg, #3A50AA 12%, #3A50AA 19.52%, #36419F 61.76%, #36419F 77.39%);
   font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  align-items: center;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: calc(100vw - 200px);
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }

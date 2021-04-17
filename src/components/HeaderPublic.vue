@@ -1,32 +1,33 @@
 <template>
-  <div class="header">
+  <div class="header-component">
     <header class="header">
         <nav class="header__nav">
           <p>Projeto</p> <!--Adicionar router-link posteriormente-->
           <p>Projeto</p>
           <p>Projeto</p>
         </nav>
-
-        <div class="header__search">
-          <input type="text">
-          <button>Entrar</button>
-        </div>
+        
+        <search/>
     </header>
   </div>
 </template>
 
 <script>
+import Search from './Search'
 export default {
-
+  components: {
+    Search
+  }
 }
 </script>
 
-<style>
+<style scoped>
 .header {
   align-items: center;
   background: transparent;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .header__nav {
