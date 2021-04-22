@@ -22,7 +22,8 @@ export default {
   border-radius: 10px;
   border: none;
   color: var(--text-color);
-  padding: 5px 10px;
+  cursor: pointer;
+  padding: 5px 15px;
   text-align: center;
 }
 </style>
