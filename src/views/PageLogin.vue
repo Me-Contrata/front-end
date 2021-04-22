@@ -10,10 +10,7 @@
       <input-component
         :input-name="inputPassword"
       />
-      <button class="form__btn"
-      >
-        Entrar
-      </button>
+      <button-component :btn-name="btnName"/>
     </form>
   </div>
 </template>
@@ -21,20 +18,37 @@
 <script>
 import HeaderPublic from '@/components/HeaderPublic'
 import InputComponent from '@/components/InputComponent'
+import ButtonComponent from '@/components/ButtonComponent'
 export default {
   data () {
     return {
       inputEmail: 'Email',
-      inputPassword: 'Password'
+      inputPassword: 'Password',
+      btnName: 'Entrar'
     }
   },
   components: {
     HeaderPublic,
-    InputComponent
+    InputComponent,
+    ButtonComponent
   }
 }
 </script>
 
-<style scope>
+<style scoped>
+.login {
+  width: 100%;
+}
 
+.login__title {
+  text-align: center;
+}
+
+.login__form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+}
 </style>
