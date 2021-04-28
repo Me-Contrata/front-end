@@ -1,9 +1,7 @@
 <template>
-  <div class="btn">
-    <button class="btn__default">
-      {{btnName}}
-    </button>
-  </div>
+  <button class="btn__default">
+    {{btnName}}
+  </button>
 </template>
 
 <script>
@@ -25,5 +23,6 @@ export default {
   cursor: pointer;
   padding: 5px 15px;
   text-align: center;
+  width: 250px;
 }
 </style>

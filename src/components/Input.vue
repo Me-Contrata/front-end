@@ -1,10 +1,8 @@
 <template>
-  <div class="genericInput">
-    <input type="text"
-      class="genericInput__basic"
-      :placeholder="inputName"
-    >
-  </div>
+  <input type="text"
+    class="genericInput__basic"
+    :placeholder="inputName"
+  >
 </template>
 
 <script>
@@ -20,8 +18,11 @@ export default {
 
 <style scoped>
 .genericInput__basic {
+  box-sizing: border-box;
   border: 0;
   border-radius: 10px;
-  padding: 5px 20px;
+  padding: 5px 5px;
+  margin: 10px 0px;
+  width: 250px;
 }
 </style>

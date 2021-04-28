@@ -2,8 +2,8 @@
   <div class="login">
     <HeaderPublic/>
 
-    <h1 class="login__title">Login</h1>
     <form action="" class="login__form">
+      <h1 class="form__title">Login</h1>
       <input-component
         :input-name="inputEmail"
       />
@@ -12,6 +12,10 @@
       />
       <button-component :btn-name="btnName"/>
     </form>
+
+    <figure class="login__figure">
+        <img class="figure__wave" src="../assets/Vector.svg" alt="">
+    </figure>
   </div>
 </template>
 
@@ -40,15 +44,25 @@ export default {
   width: 100%;
 }
 
-.login__title {
-  text-align: center;
-}
-
 .login__form {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 200px;
+  margin-top: 10rem;
+}
+
+.form__title {
+  text-align: center;
+}
+
+.login__figure {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -9;
+  margin: 0;
 }
 </style>
