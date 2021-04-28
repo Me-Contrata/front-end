@@ -17,8 +17,8 @@
 
 <script>
 import HeaderPublic from '@/components/HeaderPublic'
-import InputComponent from '@/components/InputComponent'
-import ButtonComponent from '@/components/ButtonComponent'
+import InputComponent from '@/components/Input'
+import ButtonComponent from '@/components/Button'
 export default {
   data () {
     return {
