@@ -8,13 +8,13 @@
       <button class="text__btn">Registre-se</button>
     </div>
       <figure class="main__figure">
-        <img class="figure__img" src="../assets/g10.svg" alt="">
+        <img class="figure__img" src="../assets/images/g10.svg" alt="">
       </figure>
     </main>
 
-    <figure class="home__figure">
-        <img class="figure__wave" src="../assets/Vector.svg" alt="">
-    </figure>
+    <div class="home__figure">
+      <img src="../assets/images/wave.svg" alt="Wave">
+    </div>
   </div>
 </template>
 

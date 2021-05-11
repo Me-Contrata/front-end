@@ -13,9 +13,6 @@
       <button-component :btn-name="btnName"/>
     </form>
 
-    <figure class="login__figure">
-        <img class="figure__wave" src="../assets/Vector.svg" alt="">
-    </figure>
   </div>
 </template>
 
