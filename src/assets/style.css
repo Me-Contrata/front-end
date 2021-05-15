@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: calc(100vw - 200px);
+  max-width: calc(100vw - 20vw);
   margin: 0 auto;
 }
 
