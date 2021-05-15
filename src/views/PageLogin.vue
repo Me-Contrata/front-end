@@ -1,16 +1,16 @@
 <template>
   <div class="login">
-    <HeaderPublic/>
+    <header-public/>
 
     <form action="" class="login__form">
       <h1 class="form__title">Login</h1>
       <input-component
-        :input-name="inputEmail"
+        input-name="Email"
       />
       <input-component
-        :input-name="inputPassword"
+        input-name="Password"
       />
-      <button-component :btn-name="btnName"/>
+      <button-component btn-name="Entrar"/>
     </form>
 
   </div>
@@ -18,16 +18,9 @@
 
 <script>
 import HeaderPublic from '@/components/HeaderPublic'
-import InputComponent from '@/components/Input'
-import ButtonComponent from '@/components/Button'
+import InputComponent from '@/components/InputComponent'
+import ButtonComponent from '@/components/ButtonComponent'
 export default {
-  data () {
-    return {
-      inputEmail: 'Email',
-      inputPassword: 'Password',
-      btnName: 'Entrar'
-    }
-  },
   components: {
     HeaderPublic,
     InputComponent,
