@@ -21,8 +21,9 @@ export default {
   box-sizing: border-box;
   border: 0;
   border-radius: 10px;
-  padding: 5px 5px;
   margin: 10px 0px;
+  outline: none;
+  padding: 10px 5px;
   width: 250px;
 }
 </style>
