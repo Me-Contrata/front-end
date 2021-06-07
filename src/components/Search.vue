@@ -5,6 +5,7 @@
       type="text"
     >
     <router-link class="search__btn" to='/login'>
+      <font-awesome-icon :icon="['fas', 'sign-in-alt']"/>
       Entrar
     </router-link>
   </div>
@@ -33,7 +34,6 @@ export default {
   cursor: pointer;
   color: var(--text-color);
   padding: 5px 10px;
-  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
 }
