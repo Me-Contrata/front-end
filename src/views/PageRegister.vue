@@ -2,26 +2,29 @@
   <div class="register">
     <header-public class="register__header"/>
 
-      <figure class="register__fig">
-        <img class="fig__celebration" src="../assets/images/undraw_Celebration_re_kc9k.svg" alt="Celebration">
-      </figure>
+    <figure class="register__fig">
+      <img class="fig__celebration" src="../assets/images/undraw_Celebration_re_kc9k.svg" alt="Celebration">
+    </figure>
 
-      <form action="" class="register__form">
-        <h1 class="form__title">Register</h1>
-        <input-component
-          input-name="Name"
-        />
-        <input-component
-          input-name="Email"
-        />
-        <input-component
-          input-name="Password"
-        />
-        <input-component
-          input-name="Confirm Password"
-        />
-        <button-component btn-name="Registrar"/>
-      </form>
+    <form action="" class="register__form">
+      <h1 class="form__title">Register</h1>
+      <input-component
+        input-name="Name"
+      />
+      <input-component
+        input-name="Email"
+      />
+      <input-component
+        input-name="Password"
+      />
+      <input-component
+        input-name="Confirm Password"
+      />
+      <button-component btn-name="Registrar"/>
+    </form>
+
+    <div class="register__instructions"></div>
+
   </div>
 </template>
 
@@ -73,7 +76,10 @@ export default {
   justify-content: space-evenly;
   height: 200px;
   margin-top: 3rem;
-    grid-column: 2 / span 2;
+  grid-column: 2 / span 2;
 }
 
+.register__instructions {
+
+}
 </style>
