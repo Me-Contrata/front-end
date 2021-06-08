@@ -1,8 +1,7 @@
 <template>
   <div class="register">
-    <header-public/>
+    <header-public class="register__header"/>
 
-    <div class="register__container">
       <figure class="register__fig">
         <img class="fig__celebration" src="../assets/images/undraw_Celebration_re_kc9k.svg" alt="Celebration">
       </figure>
@@ -23,7 +22,6 @@
         />
         <button-component btn-name="Registrar"/>
       </form>
-    </div>
   </div>
 </template>
 
@@ -43,7 +41,14 @@ export default {
 
 <style scoped>
 .register {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: 10vw 50vw 10vw;
   width: 100%;
+}
+
+.register__header {
+  grid-column: 1 / span 5;
 }
 
 .register__container {
@@ -54,8 +59,7 @@ export default {
 }
 
 .register__fig {
-  position: absolute;
-  left: 0;
+  grid-column: 1 / span 2;
 }
 
 .fig__celebration {
@@ -69,6 +73,7 @@ export default {
   justify-content: space-evenly;
   height: 200px;
   margin-top: 3rem;
+    grid-column: 2 / span 2;
 }
 
 </style>
