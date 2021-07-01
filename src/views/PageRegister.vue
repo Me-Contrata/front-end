@@ -32,11 +32,16 @@
 import HeaderPublic from '@/components/HeaderPublic'
 import InputComponent from '@/components/InputComponent'
 import ButtonComponent from '@/components/ButtonComponent'
+import axiosInstance from '../../services/api'
 export default {
   components: {
     HeaderPublic,
     InputComponent,
     ButtonComponent
+  },
+  mounted () {
+    axiosInstance.get('http://localhost:3000/')
+      .then(response => console.log(response.data))
   }
 
 }
@@ -62,7 +67,7 @@ export default {
 }
 
 .register__fig {
-  grid-column: 1 / span 2;
+  grid-column: 1 / 2;
 }
 
 .fig__celebration {
@@ -73,13 +78,18 @@ export default {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 200px;
-  margin-top: 3rem;
-  grid-column: 2 / span 2;
+  grid-column: 2 / 2;
 }
 
 .register__instructions {
-
+  background: #3D51FF;
+  box-shadow: 1px 1px 5px #000;
+  grid-column: 3 / 3;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 30vh;
 }
 </style>

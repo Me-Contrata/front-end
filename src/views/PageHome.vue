@@ -4,7 +4,7 @@
     <main class="main">
     <div class="main__text">
       <h1 class="text__title">Me Contrata</h1>
-      <p class="text__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore cum excepturi mollitia atque consectetur dolorum autem repudiandae tenetur nulla aliquid? Expedita magni iusto maxime quisquam debitis adipisci non consectetur sunt.</p>
+      <p class="text__description">Este projeto é desenvolvido para você que quer entrar na área e precisa mostrar mais do seus estudos e seus projetos.</p>
       <router-link to="/register" class="text__btn">Registre-se</router-link>
     </div>
       <figure class="main__figure">
