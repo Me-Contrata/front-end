@@ -19,6 +19,7 @@
       />
       <input-component
         input-name="Confirm Password"
+        @focus="showInstructions()"
       />
       <button-component btn-name="Registrar"/>
     </form>
@@ -42,6 +43,11 @@ export default {
   mounted () {
     axiosInstance.get('http://localhost:3000/')
       .then(response => console.log(response.data))
+  },
+  methods: {
+    showInstructions () {
+
+    }
   }
 
 }
@@ -82,6 +88,7 @@ export default {
 }
 
 .register__instructions {
+  display: none;
   background: #3D51FF;
   box-shadow: 1px 1px 5px #000;
   grid-column: 3 / 3;
@@ -91,5 +98,6 @@ export default {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-top: 30vh;
+  transform: display 0.5s ease;
 }
 </style>
