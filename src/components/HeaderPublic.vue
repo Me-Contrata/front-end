@@ -2,9 +2,8 @@
   <div class="header-component">
     <header class="header">
         <nav class="header__nav">
-          <p>Projeto</p> <!--Adicionar router-link posteriormente-->
-          <p>Projeto</p>
-          <p>Projeto</p>
+          <router-link class="nav__link" to="#">Como funciona?</router-link>
+          <router-link class="nav__link" to="#">Quem somos</router-link>
         </nav>
         
         <search/>
@@ -32,5 +31,11 @@ export default {
 
 .header__nav {
   display: flex;
+}
+
+.nav__link {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-right: 10px;
 }
 </style>

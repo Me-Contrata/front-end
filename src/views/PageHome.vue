@@ -2,11 +2,11 @@
   <div class="home">
     <HeaderPublic/>
     <main class="main">
-    <div class="main__text">
-      <h1 class="text__title">Me Contrata</h1>
-      <p class="text__description">Este projeto é desenvolvido para você que quer entrar na área e precisa mostrar mais do seus estudos e seus projetos.</p>
-      <router-link to="/register" class="text__btn">Registre-se</router-link>
-    </div>
+      <div class="main__text">
+        <h1 class="text__title">Me Contrata</h1>
+        <p class="text__description">Este projeto é desenvolvido para você que quer entrar na área e precisa mostrar mais do seus estudos e seus projetos.</p>
+        <router-link to="/register" class="text__btn">Registre-se</router-link>
+      </div>
       <figure class="main__figure">
         <img class="figure__img" src="../assets/images/g10.svg" alt="Wave">
       </figure>
@@ -15,6 +15,14 @@
     <div class="home__figure">
       <img src="../assets/images/wave.svg" alt="Wave">
     </div>
+
+    <span class="home__divisor"></span>
+
+    <section class="home__works">
+      <figure class="works__fig">
+        <img src="../assets/images/workTogether.svg" alt="" class="fig__together">
+      </figure>
+    </section>
   </div>
 </template>
 
@@ -61,11 +69,24 @@ export default {
 }
 
 .home__figure {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: -1;
   margin: 0;
+}
+
+.home__divisor {
+  background: #313188;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 100%;
+}
+
+.works__fig {
+  width: 200px;
 }
 </style>

@@ -9,6 +9,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #36419F;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #363636;
+}
+
 #app {
   align-items: center;
   color: var(--text-color);
